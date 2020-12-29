@@ -1,15 +1,3 @@
-/*
-"Enter your age: "
-"Enter your height: "
-"Enter your property: "
-"Your status = "
-"UNFRIEND"
-"FRIEND"
-"BEST FRIEND"
-"ONE-NIGHT-STAND"
-"MARRIED"
-*/
-
 #include <iostream>
 
 using namespace std;
@@ -19,43 +7,36 @@ int main(){
     cout << "Enter your age: ";
     cin >> age;
     string status;
-    if(age <= 20){
-        int height; 
+    if (age <= 20){
+        int height;
         cout << "Enter your height: ";
         cin >> height;
-        if(height < 160){
+        if (height < 160)
             status = "UNFRIEND";
-        }
-        else if(height < 175){
+        else if (height < 175)
             status = "FRIEND";
-        }
         else{
-            int money; 
+            int money;
             cout << "Enter your property: ";
             cin >> money;
-            if(money > 69000000){
+            if (money > 69000000)
                 status = "MARRIED";
-            }
-            else{
+            else
                 status = "ONE-NIGHT-STAND";
-            }
         }
     }
     else{
-        if(age < 30){
-            int money ;
+        if (age < 30){
+            int money;
             cout << "Enter your property: ";
-            cin >> money ;
-            if(money > 10000000){
+            cin >> money;
+            if (money > 10000000)
                 status = "BEST FRIEND";
-            }
-            else{
+            else
                 status = "UNFRIEND";
-            }
         }
-        else{
+        else
             status = "UNFRIEND";
-        }
     }
     cout << "Your status = " << status;
 }
